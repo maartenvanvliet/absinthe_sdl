@@ -50,7 +50,7 @@ defmodule TestQuerySchema do
     types([:item, :union_item])
 
     resolve_type(fn
-      _, _ -> :item
+      :bogus, _ -> :item
       _, _ -> :string
     end)
   end
