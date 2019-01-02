@@ -39,7 +39,10 @@ defmodule AbsintheSdl.MixProject do
   defp deps do
     [
       {:absinthe,
-       git: "https://github.com/absinthe-graphql/absinthe.git", branch: "master", override: true, only: [:test]},
+       git: "https://github.com/absinthe-graphql/absinthe.git",
+       branch: "master",
+       override: true,
+       only: [:test]},
       {:jason, "~> 1.0.0", only: [:test]},
       {:ex_doc, "~> 0.19.0", only: [:dev]}
     ]
