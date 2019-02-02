@@ -33,7 +33,10 @@ defmodule AbsintheSdl do
   introspection query.
   """
   def encode!(schema, _opts \\ []) do
-    schema = schema_from_data(schema)
+    schema =
+      schema
+      |> schema_from_data()
+      |> sorted_objects()
 
     root_nodes(schema) <> type_nodes(schema)
   end
@@ -189,4 +192,22 @@ defmodule AbsintheSdl do
   end
 
   defp subscription_type(_), do: ""
+
+  defp sorted_objects(value)
+
+  defp sorted_objects(map) when is_map(map) do
+    for {key, val} <- map, into: %{}, do: {key, sorted_objects(val)}
+  end
+
+  defp sorted_objects(list) when is_list(list) do
+    list
+    |> Enum.sort_by(&list_sorting_value/1)
+    |> Enum.map(&sorted_objects/1)
+  end
+
+  defp sorted_objects(value), do: value
+
+  defp list_sorting_value(%{name: name}), do: name
+  defp list_sorting_value(%{"name" => name}), do: name
+  defp list_sorting_value(value), do: value
 end

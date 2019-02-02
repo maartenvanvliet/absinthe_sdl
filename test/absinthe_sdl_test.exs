@@ -19,6 +19,10 @@ defmodule AbsintheSdlTest do
     assert AbsintheSdl.encode!(json_fixture("swapi.json")) == sdl_fixture("test_swapi.graphql")
   end
 
+  test "it encodes a large order schema in same order" do
+    assert run(TestLargeOrderedSchema) == sdl_fixture("test_large_ordered_schema.graphql")
+  end
+
   def sdl_fixture(file) do
     File.read!("test/fixtures/sdl/" <> file)
   end

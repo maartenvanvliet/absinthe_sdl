@@ -10,7 +10,7 @@ enum Color {
 }
 
 """An item"""
-type Item implements TimedEntity, NamedEntity {
+type Item implements NamedEntity, TimedEntity {
   """Enum description"""
   color: Color
   """Item field description"""
