@@ -43,7 +43,7 @@ defmodule AbsintheSdl.MixProject do
        branch: "master",
        override: true,
        only: [:test]},
-      {:jason, "~> 1.0.0", only: [:test]},
+      {:jason, "~> 1.1.2", only: [:test]},
       {:ex_doc, "~> 0.19.0", only: [:dev]}
     ]
   end
