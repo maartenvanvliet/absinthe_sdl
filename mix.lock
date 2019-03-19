@@ -1,5 +1,5 @@
 %{
-  "absinthe": {:git, "https://github.com/absinthe-graphql/absinthe.git", "8cc869db270ef178337bb1aeac7f2489b41fe510", [branch: "master"]},
+  "absinthe": {:git, "https://github.com/absinthe-graphql/absinthe.git", "4b6d0182652463f4d3dbb1c88a2b74e33a97747d", [branch: "master"]},
   "earmark": {:hex, :earmark, "1.3.1", "73812f447f7a42358d3ba79283cfa3075a7580a3a2ed457616d6517ac3738cb9", [:mix], [], "hexpm"},
   "ex_doc": {:hex, :ex_doc, "0.19.3", "3c7b0f02851f5fc13b040e8e925051452e41248f685e40250d7e40b07b9f8c10", [:mix], [{:earmark, "~> 1.2", [hex: :earmark, repo: "hexpm", optional: false]}, {:makeup_elixir, "~> 0.10", [hex: :makeup_elixir, repo: "hexpm", optional: false]}], "hexpm"},
   "jason": {:hex, :jason, "1.1.2", "b03dedea67a99223a2eaf9f1264ce37154564de899fd3d8b9a21b1a6fd64afe7", [:mix], [{:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm"},
