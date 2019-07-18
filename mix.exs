@@ -44,7 +44,7 @@ defmodule AbsintheSdl.MixProject do
        override: true,
        only: [:test]},
       {:jason, "~> 1.1.2", only: [:test]},
-      {:ex_doc, "~> 0.20.0", only: [:dev]}
+      {:ex_doc, "~> 0.21.0", only: [:dev]}
     ]
   end
 end
