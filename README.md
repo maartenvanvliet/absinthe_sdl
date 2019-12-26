@@ -1,3 +1,6 @@
+# Important!
+The Absinthe 1.5 rc.0 release contains a feature to generate SDL from an Absinthe schema. This is a better approach than what this repository does. See https://hexdocs.pm/absinthe/1.5.0-rc.0/Mix.Tasks.Absinthe.Schema.Sdl.html#content for more information.
+
 # AbsintheSdl
 
 [![Build Status](https://travis-ci.com/maartenvanvliet/absinthe_sdl.svg?branch=master)](https://travis-ci.com/maartenvanvliet/absinthe_sdl) [![Hex pm](http://img.shields.io/hexpm/v/absinthe_sdl.svg?style=flat)](https://hex.pm/packages/absinthe_sdl) [![Hex Docs](https://img.shields.io/badge/hex-docs-9768d1.svg)](https://hexdocs.pm/absinthe_sdl) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
