@@ -1,5 +1,6 @@
-# Important!
-The Absinthe 1.5 rc.0 release contains a feature to generate SDL from an Absinthe schema. This is a better approach than what this repository does. See https://hexdocs.pm/absinthe/1.5.0-rc.0/Mix.Tasks.Absinthe.Schema.Sdl.html#content for more information.
+> #### Important! {: .neutral}
+>
+> Absinthe 1.5 and up contains a feature to generate SDL from an Absinthe schema. This is a better approach than what this repository does. See https://hexdocs.pm/absinthe/Mix.Tasks.Absinthe.Schema.Sdl.html for more information.
 
 # AbsintheSdl
 
@@ -8,18 +9,22 @@ The Absinthe 1.5 rc.0 release contains a feature to generate SDL from an Absinth
 Convert the json output of an introspection query into Graphql SDL syntax.
 
 ## Standalone
+
 Can convert the output of introspection queries in json format to SDL. See the test fixtures.
 
 ### Example
+
 ```
 AbsintheSdl.encode!(Jason.decode!("swapi.json"))
 ```
 
 ## Absinthe
+
 Can be used to convert an Absinthe schema to SDL by using AbsintheSdl as the JSON
 encoder.
 
 ### Example
+
 ```
 mix absinthe.schema.json --schema MySchema --json-codec AbsintheSdl
 ```
@@ -40,4 +45,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/absinthe_sdl](https://hexdocs.pm/absinthe_sdl).
-
